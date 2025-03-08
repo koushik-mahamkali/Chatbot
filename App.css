@@ -1,0 +1,105 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #333;
+}
+
+/* Main container for the chat app */
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 2em;
+  color: #444;
+}
+
+/* Chat window styling */
+.chat-window {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Chat bubble common styles */
+.chat-bubble {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 5px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+/* User chat bubble styling */
+.chat-bubble.user {
+  background-color: #007bff;
+  color: #fff;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Bot chat bubble styling */
+.chat-bubble.bot {
+  background-color: #e0e0e0;
+  color: #333;
+  text-align: left;
+  margin-right: auto;
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  margin-top: 15px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-area input:focus {
+  border-color: #5563DE;
+}
+
+.input-area button {
+  margin-left: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #5563DE;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #4353c3;
+}

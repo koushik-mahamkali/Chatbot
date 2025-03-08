@@ -83,9 +83,6 @@ node server.js
 docker-compose up --build
 ```
 
-## License
-This project is licensed under the MIT License.
-
 ## Contributing
 Feel free to submit pull requests and issues!
 
